@@ -25,3 +25,39 @@ The best-performing model was selected based on a comprehensive evaluation of cl
 | **Model Used** | **XGBClassifier (Best Performing)** |
 
 **Classification Report Summary:**
+
+```text
+               precision    recall  f1-score   support
+------------------------------------------------------
+    Negative (0)       0.89      0.87      0.88       124
+    Positive (1)       0.59      0.64      0.61        36
+------------------------------------------------------
+   weighted avg        0.82      0.82      0.82       160
+```
+
+## 🛠 Technologies Used
+* **Language:** Python
+* **Data Analysis:** Pandas, NumPy
+* **Machine Learning:** Scikit-learn, Imbalance-learn (SMOTE), XGBoost
+* **Visualization:** Matplotlib, Seaborn
+* **Environment:** Jupyter Notebook / Google Colab
+* **Deployment Potential:** Final model saved using `pickle` for future deployment.
+
+## 🏃 Getting Started
+
+To run this project locally and reproduce the results:
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [Your Repository URL Here]
+    ```
+2.  **Open the Notebook:**
+    * Open `Autism_Preidiction_using_machine_Learning.ipynb` in Google Colab, Jupyter, or VS Code.
+3.  **Run Cells:**
+    * Ensure all necessary Python libraries (listed above) are installed.
+    * Execute the notebook cells sequentially to load the data, preprocess, train the models, and view the final results.
+
+## Future Enhancements
+* Deploy the final model as a simple web service (e.g., using Streamlit or Flask).
+* Explore Deep Learning models (e.g., Neural Networks) to compare performance.
+* Conduct more extensive Feature Engineering to potentially improve the F1-score for the positive class.
